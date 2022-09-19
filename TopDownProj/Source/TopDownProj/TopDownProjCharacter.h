@@ -17,6 +17,8 @@ public:
 	// Called every frame.
 	virtual void Tick(float DeltaSeconds) override;
 
+	virtual void Falling() override;
+
 	/** Returns TopDownCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetTopDownCameraComponent() const { return TopDownCameraComponent; }
 	/** Returns CameraBoom subobject **/
